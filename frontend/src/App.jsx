@@ -15,6 +15,8 @@ import UploadPrescriptionScreen from "./screens/UploadPrescriptionScreen.jsx";
 import SubstitutesScreen from "./screens/SubstitutesScreen.jsx";
 import ProfileScreen from "./screens/ProfileScreen.jsx";
 import NotFound from "./screens/NotFound.jsx";
+import UserProfile from "./screens/UserProfile.jsx";
+import PharmacyDashboard from "./screens/PharmacyDashboard.jsx";
 
 // Shared Components
 import Header from "./components/Header.jsx";
@@ -62,6 +64,10 @@ export default function App() {
 
               {/* Main App Flow */}
               <Route path="/home" element={<HomeScreen />} />
+              <Route path="/profile" element={<UserProfile/>}/>
+              <Route path="/pharmacy-dashboard" element={<PharmacyDashboard />} />
+              <Route path="/pharmacy-dashboard" element={<PharmacyDashboard />} />
+
               <Route path="/search" element={<SearchScreen />} />
               <Route path="/results" element={<ResultsScreen />} />
               <Route path="/pharmacy/:id" element={<PharmacyDetailsScreen />} />
