@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuthStore } from "../services/useAuthStore";
+// import { useAuthStore } from "../services/useAuthStore";
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -8,17 +8,17 @@ export default function Signup() {
     password: "",
   });
 
-    const { signup } =  useAuthStore();
+  //   const { signup } =  useAuthStore();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    if(formData){
-      signup(formData);
-    }
+  //   if(formData){
+  //     signup(formData);
+  //   }
     
 
-  };
+  // };
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900 text-white ">
@@ -36,7 +36,7 @@ export default function Signup() {
           </h1>
         </div>
 
-        <form action="" method="post" onSubmit={handleSubmit}>
+        <form action="" method="post" >
           <div className="pb-6">
             <label htmlFor="name" className="block text-sm pb-3">
               User name

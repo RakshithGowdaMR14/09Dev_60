@@ -1,5 +1,5 @@
-
 import './App.css'
+import Signup from './pages/signup'
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route />;
+        <Route path = "/signup" element={<Signup/>} />
       </Routes>
       </BrowserRouter>
     </div>
